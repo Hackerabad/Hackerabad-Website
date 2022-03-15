@@ -1,4 +1,5 @@
 # redirects pages to other urls
+/ https://hackerabad.github.io/beyond-the-binary/
 /home https://hackerabad.github.io/beyond-the-binary/
 /event https://hackerabad.github.io/beyond-the-binary/
 /btb https://hackerabad.github.io/beyond-the-binary/
