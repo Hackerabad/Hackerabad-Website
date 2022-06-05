@@ -1,6 +1,7 @@
 button{
     border-radius: 15px;
 }
+
 .landing{
 position: absolute;
 width: 100%;
@@ -48,24 +49,35 @@ line-height: 150%;
     width: 40px;
     height: auto;
 }
-
+/* MAIN */
 .main{
     position: relative;
     margin-top: 90px;
     height: 50%;
+    display: flex;
+    justify-content: space-around;
 }
-.main .abcd-text span{
-    color: red;
+.main .register{
+    /* position: absolute;    
+    top: 18%;
+    left: 12%; */
+    /* display: flex; */
+    
+}
+.main .remote{
+    /* position: absolute;
+    top: -9%;
+    bottom: 20%;
+    right: 15%; */
+    display: flex;
 }
 .main .abcd-text{
     font-size: 40px;
     font-weight: bolder;
     font: 'Inter';
 }
-.main .register{
-    position: absolute;    
-    top: 18%;
-    left: 12%;
+.main .abcd-text span{
+    color: red;
 }
 .register-btn{
     width: 288px;
@@ -81,12 +93,6 @@ line-height: 150%;
     /* identical to box height, or 200% */
     
     text-align: center;
-}
-.main .remote{
-    position: absolute;
-    /* top: -9%; */
-    bottom: 20%;
-    right: 15%;
 }
 .remote img{
     width: 400px;
