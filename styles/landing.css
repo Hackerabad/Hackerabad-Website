@@ -13,9 +13,11 @@ background: #FFCF42;
 }
 .landing-logo img{
     width: 312px;
+
     height: auto;
     background-color: #FFCF42;
     margin-left: 2%;
+    /* margin-top: 2%; */
 }
 .landing .header{
     display: flex;
