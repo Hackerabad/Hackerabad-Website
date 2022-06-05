@@ -5,8 +5,8 @@ button{
 position: absolute;
 min-width: 100vw;
 width: auto;
-min-height: 100vh;
 height: auto;
+min-height: 100vh;
 left: 0px;
 top: 0px;
 display: flex;
