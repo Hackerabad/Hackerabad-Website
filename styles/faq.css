@@ -1,4 +1,4 @@
-/* CSS for FAQ section */
+/* CSS for faq section */
 body {
     background: #FFF7D3;
     display: flex;
@@ -52,10 +52,10 @@ body {
   }
   
   #faq p {
-    color: #333;
+    color: rgb(10, 10, 10);
     text-align: left;
     font-family: 'hm_light', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.45;
     position: relative;
     overflow: hidden;
@@ -145,6 +145,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-radius: 25px
   }
   
   html, body {
