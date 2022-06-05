@@ -16,21 +16,41 @@
     <script src=https://kit.fontawesome.com/3c09bcb51a.js></script>
     <title>Hackerabad</title>
     <link href="styles/landing.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- Landing Page -->
-    <div class="landing">
+   
+    <div class="landing" id="home">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#">Beyond The Binary</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+            <a href="#whatwedo">What we do</a>
+            <a href="#team">Team</a>
+            <a href="#faq">FAQ</a>
+            <a href="#join">Join us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
         <div class="landing-logo">
             <a href="#landing"><img src="img/transparent-logo.png" alt="logo"></a>
         </div>
-        <!-- <div class="header">
-            <ul>
-                <li><a href=""><img class="youtube-img" src="img/youtube.png" alt="discord"> Beyond The Binary</a>
-                </li>
-                <li>Instagram</li>
-            </ul>
-        </div> -->
         <div class="main">
             <div class="register">
                 <p class="abcd-text"><span>A</span>ny <span>B</span>ody <span>C</span>an <span>D</span>evelop</p>
@@ -41,20 +61,20 @@
                 <!-- <img src="img/favpng_remote-life-tech-life.png" alt=""> -->
             </div>
         </div>
-        <!-- <div class="socials">
+         <div class="socials">
             <a href="https://www.instagram.com/hackclub_hackerabad"><button class="socials-btn">Instagram <img
                         src="img/insta.png" alt=""></button></a>
             <a href="https://www.twitter.com/hackerabad"><button class="socials-btn">Twitter <img src="img/twitter.png"
                         alt="twitter"></button></a>
             <a href="https://www.twitter.com/hackerabad"><button class="socials-btn">Discord <img
                         src="img/discord-neg.png" alt="twitter"></button></a>
-        </div> -->
+        </div> 
     </div>
 
     <!-- Landing Page -->
     <!-- ******************************************************************* -->
     <!-- Events  -->
-
+    <div class="events" id="events">
 
     <!-- Events -->
     <!-- ******************************************************************* -->
@@ -85,7 +105,7 @@
     <!-- ******************************************************************* -->
     <!-- Footer -->
 
-
+   
     <!-- Footer -->
 
     <script type="text/javascript" src="scripts/"></script>
