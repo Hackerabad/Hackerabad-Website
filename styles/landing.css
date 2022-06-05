@@ -1,11 +1,10 @@
 button{
     border-radius: 15px;
 }
-
 .landing{
 position: absolute;
 width: 100%;
-height: 100%;
+height: auto;
 left: 0px;
 top: 0px;
 display: flex;
@@ -14,11 +13,9 @@ background: #FFCF42;
 }
 .landing-logo img{
     width: 312px;
-
     height: auto;
     background-color: #FFCF42;
     margin-left: 2%;
-    /* margin-top: 2%; */
 }
 .landing .header{
     display: flex;
@@ -49,35 +46,24 @@ line-height: 150%;
     width: 40px;
     height: auto;
 }
-/* MAIN */
+
 .main{
     position: relative;
-    margin-top: 90px;
+    margin: 90px 0 90px 0;
     height: 50%;
-    display: flex;
-    justify-content: space-around;
 }
-.main .register{
-    /* position: absolute;    
-    top: 18%;
-    left: 12%; */
-    /* display: flex; */
-    
-}
-.main .remote{
-    /* position: absolute;
-    top: -9%;
-    bottom: 20%;
-    right: 15%; */
-    display: flex;
+.main .abcd-text span{
+    color: red;
 }
 .main .abcd-text{
     font-size: 40px;
     font-weight: bolder;
     font: 'Inter';
 }
-.main .abcd-text span{
-    color: red;
+.main .register{
+    position: relative;    
+    top: 18%;
+    left: 12%;
 }
 .register-btn{
     width: 288px;
@@ -85,7 +71,7 @@ line-height: 150%;
     background-color: black;
     color: rgb(229, 226, 226);  
     cursor: pointer;
-    font-family: 'Inter';
+    font-family: 'source code pro';
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -94,26 +80,37 @@ line-height: 150%;
     
     text-align: center;
 }
+.main .remote{
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+}
 .remote img{
     width: 400px;
     height: auto;
 }
+
+/* SOCIALS */
 .socials{
-    margin-top: 40px;
+    padding-top:3%;
     text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
 .socials-btn{
     width: 188px;
     height: 64px;
     background-color: black;
     color: rgb(229, 226, 226);
-    
+    margin: 2%;
+
     cursor: pointer;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 32px;
-/* identical to box height, or 200% */
-text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    text-align: center;
 }
