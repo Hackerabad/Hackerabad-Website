@@ -1,95 +1,274 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset=UTF-8 />
-    <meta name=description content="Free coming soon template">
-    <meta name=author content="Pawel Zuchowski">
-    <meta name=viewport content="width=device-width,initial-scale=1" />
-    <meta http-equiv=X-UA-Compatible content="ie=edge" />
-
-    <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
-        integrity=sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO crossorigin=anonymous>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel=stylesheet>
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap" rel=stylesheet>
-    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <script src=https://kit.fontawesome.com/3c09bcb51a.js></script>
-    <title>Hackerabad</title>
-    <link href="styles/landing.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond The Binary</title>
+    <link rel="icon" href="./assets/icons/fav-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery for email forms -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- Serialize Object to send data to google script -->
+    <script src="jquery.serialize-object.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <style>
+        p{text-align: center;}
+    </style>
 </head>
+<header>
+    <!-- <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#join-us">SPEAKERS</a></li>
+            <li><a href="#schedule-faq">SCHEDULE</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav> -->
+</header>
 
 <body>
-    <!-- Landing Page -->
-    <div class="landing">
-        <div class="landing-logo">
-            <a href="#landing"><img src="img/transparent-logo.png" alt="logo"></a>
-        </div>
-        <!-- <div class="header">
-            <ul>
-                <li><a href=""><img class="youtube-img" src="img/youtube.png" alt="discord"> Beyond The Binary</a>
-                </li>
-                <li>Instagram</li>
-            </ul>
-        </div> -->
-        <div class="main">
-            <div class="register">
-                <p class="abcd-text"><span>A</span>ny <span>B</span>ody <span>C</span>an <span>D</span>evelop</p>
-                <a href="https://forms.gle/V9YDu31shBBF21tL8" target="_blank"><button class="register-btn">Register
-                        Here</button></a>
+    <div class="title-section">
+        
+        <!-- Title Grid -->
+        <a href="https://hackclub.com/"><img src="/assets/icons/flag-orpheus-top.svg" alt="" srcset="" style="position:absolute ; width: 10rem; margin-left: 30px;"></a>
+        <div class="grid fullscreen horz-center">
+            <div class="title-col">
+
+                <img src="./assets/abcd.svg" class="title-logo" alt="">
+                <h2 class="sub-title">A two Day workshop By </h2>
+
+                <div>
+                    <a href="https://discord.gg/3wmJeSS56w"><img src="./assets/club-logo.png" alt="club logo"
+                            style="width: 100%;"></a>
+                </div>
+                <!-- <div class="social-box">
+                    <a href="https://discord.gg/3wmJeSS56w"><img src="./assets/icons/discord-icon.png"
+                            class="social-favicons" alt=""></a>
+                    <a href="https://twitter.com/hackerabad"><img src="./assets/icons/twitter-icon.png"
+                            class="social-favicons" alt=""></a>
+                    <a href="https://www.instagram.com/hackclub_hackerabad/"><img src="./assets/icons/insta-icon.png"
+                            class="social-favicons" alt=""></a>
+                        </div> -->
+                <a href="https://forms.gle/V9YDu31shBBF21tL8" target="_blank"><button class="glow-on-hover" type="button">REGISTER NOW</button></a>
+                <a href="#about">
+            
+                    <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
             </div>
-            <div class="remote">
-                <!-- <img src="img/favpng_remote-life-tech-life.png" alt=""> -->
+        </div>
+    </div>
+    
+    <!-- Our Mission Grid -->
+    <div class="our-mission-section background-grad" id="about">
+        <div class="grid center-items mission-grid">
+            <div class="col-2">
+                <h2 class="heading">Our Mission<span class="backslash-black">/</span></h2>
+                <p class="mission-text">
+                    Hackerabad is back and this time in-person during the RIGOLADE'22⭐
+Presenting Any-Body-Can-Develop: A 2 day Hybrid workshop to help you kick start career in tech
+Day One: Professional Ethics 101 - Learn the best practices in the tech culture 
+Day Two: May the source be with you - Make your first step into the world of open source
+
+Hosted by GitHub Campus Expert and Google Summer of Docs mentee
+<br/>
+<br/>
+Free swags for all attendees 👕🤌
+        </div>
+    </div>
+    <div class="our-team" id="team">
+        <!--Team Section -->
+        <div class="team-section">
+            <h2 class="heading team-heading">Hackerabad Team<span class="backslash-white">/</span></h2>
+            <div class="grid team-grid">
+                <a class="linkedin" href="https://www.linkedin.com/in/ashwinexe/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/ashwin-team.png" alt="">
+                        <h4 class="team-name">Ashwin kumar</h4>
+                        <p class="team-title">Co-Founder <br> Tech Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/aakanksha-rangdal-72b567219/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/aakanksha-team.png" alt="">
+                        <h4 class="team-name">Aakanksha</h4>
+                        <p class="team-title">Co-Founder <br> Design Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/aakanksha-rangdal-72b567219/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/vee.png" alt="">
+                        <h4 class="team-name">Vee</h4>
+                        <p class="team-title">Lead <br>Members Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/lavkush-biyani-07/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/lavkush-team.png" alt="">
+                        <h4 class="team-name">Lavakush</h4>
+                        <p class="team-title">Administration Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/kompella-sai-manvish-88a155227/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/manvish-team.png" alt="">
+                        <h4 class="team-name">Manvish</h4>
+                        <p class="team-title">Logistics Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/saikrishna-ramdeni-34a146208/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/saikrishna-team.png" alt="">
+                        <h4 class="team-name">Sai Krishna</h4>
+                        <p class="team-title">Volunteer Lead</p>
+                    </div>
+                </a>
+
+                <a class="linkedin" href="https://www.linkedin.com/in/sharanya-jella-67633520a/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/sathya.png" alt="">
+                        <h4 class="team-name">Sathya</h4>
+                        <p class="team-title">Marketing Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/shreya8801/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/shreya-team.png" alt="">
+                        <h4 class="team-name">Shreya</h4>
+                        <p class="team-title">Documentation Lead</p>
+                    </div>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/in/sri-nivas1227/">
+                    <div class="team-member">
+                        <img class="team-img" src="./assets/team-pictures/srinivas-team.png" alt="">
+                        <h4 class="team-name">Srinivas</h4>
+                        <p class="team-title">Financial Lead</p>
+                    </div>
+                </a>
             </div>
         </div>
-        <!-- <div class="socials">
-            <a href="https://www.instagram.com/hackclub_hackerabad"><button class="socials-btn">Instagram <img
-                        src="img/insta.png" alt=""></button></a>
-            <a href="https://www.twitter.com/hackerabad"><button class="socials-btn">Twitter <img src="img/twitter.png"
-                        alt="twitter"></button></a>
-            <a href="https://www.twitter.com/hackerabad"><button class="socials-btn">Discord <img
-                        src="img/discord-neg.png" alt="twitter"></button></a>
-        </div> -->
+    </div>
+    <!-- Speakers Grid -->
+    <div class="speakers background-grad">
+        <div class="join-us-section" id="join-us">
+            <h2 class="heading">Speakers<span class="backslash-black">/</span></h2>
+            <!-- <h1>Coming soon 🤫</h1> -->
+            <div class="grid team-grid">
+                <div class="grid ">
+                    <div class="col apply-three-mid">
+                        <a href="https://twitter.com/ashwinexe">
+                            <img class="apply-img" src="./assets/speakers/ashwin.png" alt="">
+                        </a>
+                        <h4 class="join-us-subheader">
+                            Ashwin Kumar Uppala
+                        </h4>
+                         <p>Co Founder - <b>Hackerabad</b> | GitHub Campus Expert |<br> Microsoft Learn Student Amabassador</p>
+                    </div>
+                    <div class="col apply-three-mid ">
+                        <a href="https://twitter.com/adityaoberai1">
+                            <img class="apply-img" src="./assets/speakers/karuna.jpg" alt="">
+                        </a>
+                        <h4 class="join-us-subheader">
+                            Karuna Tata
+                        </h4>
+                              <p>Mentee @<b>Google Season of Docs</b> | 10x Hackathon Winner | Community Events Lead @<b>Community Classroom</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Landing Page -->
-    <!-- ******************************************************************* -->
-    <!-- Events  -->
+    <!-- Schedule Section -->
+    <div class="schedule-section" id="schedule-faq">
+        <div class="grid schedule-grid">
+            <div class="col-3">
+                <h2 class="heading">Schedule/</h2>
+                <!-- <h1>Dropping Soon 📅</h1>
+                <i>Hint: Starting 18th March 2022</i> -->
+                <div class="schedule-timeline">
+                    <div class="container">
+                        <div class="timeline">
+                            <ul>
+                                <li class="background-grad">
+                                    <div class="timeline-content">
+                                        <h2 class="date">9th June, 2022 [ 2:00 pm IST ]</h2>
+                                        <h1><b>Professional Ethics 101</b> Best Practices to get started in tech as a student</h1>
+                                        <h3>Ashwin Kumar Uppala</h3>
+                                        
+                                    </div>
+                                </li>
+                                <li class="background-grad">
+                                    <div class="timeline-content">
+                                        <h2 class="date">10th June, 2022 [ 2:00 pm IST ]</h2>
+                                        <h1><b>May The Source be with you</b> Open Source Hands on</h1>
+                                        <h3>Ashwin Kumar Uppala</h3>
+                                        <h3>Karuna Tata</h3>
+                                       
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col">
 
+            </div> -->
+        </div>
+    </div>
+    <!-- Sponsors Section -->
+    <div class="">
+        <div class="sponsor-section" id="partners">
+            <h2 class="heading">Swag Sponsers<span class="backslash-black">/</span></h2>
+            <!-- <h1>Revealing not yet (☞ﾟヮﾟ)☞</h1> -->
+            <!-- Partners -->
+            <!-- <h3 class="sponsor-header">Partnered With</h3> -->
+            <div class="grid">
+                <div class="sponsor-holder-partner">
+                    <a href="https://mobile.twitter.com/michispotlight">
+                        <img class="sponsor-img-partner" src="./assets/sponsors/codiga.svg" alt="" style="width: 100% ;">
+                    </a>
+                </div>
 
-    <!-- Events -->
-    <!-- ******************************************************************* -->
-    <!-- About Us -->
+                <div class="sponsor-holder-partner">
+                    <a href="https://mobile.twitter.com/HackTheLeague">
+                        <img class="sponsor-img-partner" src="./assets/sponsors/hackclub.svg" alt="" style="width: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    <!-- About us -->
-    <!-- ******************************************************************* -->
-    <!-- What we do -->
-
-
-    <!-- What we do -->
-    <!-- ******************************************************************* -->
-    <!-- Hackerabad Team -->
-
-
-    <!-- Hackerabad Team -->
-    <!-- ******************************************************************* -->
-    <!-- FAQ-->
-
-
-    <!-- FAQ-->
-    <!-- ******************************************************************* -->
-    <!-- Join Us-->
-
-
-    <!-- Join Us-->
-    <!-- ******************************************************************* -->
-    <!-- Footer -->
-
-
-    <!-- Footer -->
-
-    <script type="text/javascript" src="scripts/"></script>
-
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <h4 class="questions">Questions? Contact us at: <a
+                href="mailto:hackclubhackerabad@gmail.com">hackclubhackerabad@gmail.com</a></h4>
+        <div class="social-box">
+            <a href="https://discord.gg/3wmJeSS56w"><img src="./assets/icons/discord-icon.png" class="social-favicons"
+                    alt=""></a>
+            <a href="https://twitter.com/hackerabad"><img src="./assets/icons/twitter-icon.png" class="social-favicons"
+                    alt=""></a>
+            <a href="https://www.instagram.com/hackclub_hackerabad/"><img src="./assets/icons/insta-icon.png"
+                    class="social-favicons" alt=""></a>
+        </div>
+    </div>
 </body>
+<script src="./script.js" charset="utf-8"></script>
 
 </html>
